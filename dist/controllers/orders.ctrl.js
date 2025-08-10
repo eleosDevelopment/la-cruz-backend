@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getAllOrders = exports.getProduct = exports.deleteProduct = exports.updateProduct = exports.createOrder = void 0;
+exports.getAllOrders = exports.getOrder = exports.deleteOrder = exports.updateOrder = exports.createOrder = void 0;
 const orders_models_js_1 = __importDefault(require("../models/orders.models.js"));
 //CREATE
 const createOrder = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
@@ -35,7 +35,7 @@ const createOrder = (req, res, next) => __awaiter(void 0, void 0, void 0, functi
 });
 exports.createOrder = createOrder;
 //EDIT
-const updateProduct = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+const updateOrder = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const { id } = req.params;
         const { body } = req;
@@ -49,9 +49,9 @@ const updateProduct = (req, res, next) => __awaiter(void 0, void 0, void 0, func
         next(error);
     }
 });
-exports.updateProduct = updateProduct;
+exports.updateOrder = updateOrder;
 //DELETE
-const deleteProduct = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+const deleteOrder = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const productDeleted = yield orders_models_js_1.default.findByIdAndDelete(req.params.id);
         if (!productDeleted)
@@ -62,9 +62,9 @@ const deleteProduct = (req, res, next) => __awaiter(void 0, void 0, void 0, func
         next(error);
     }
 });
-exports.deleteProduct = deleteProduct;
+exports.deleteOrder = deleteOrder;
 //GET
-const getProduct = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+const getOrder = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const order = yield orders_models_js_1.default.findById(req.params.id);
         if (!order)
@@ -75,7 +75,7 @@ const getProduct = (req, res, next) => __awaiter(void 0, void 0, void 0, functio
         next(error);
     }
 });
-exports.getProduct = getProduct;
+exports.getOrder = getOrder;
 //GET ALL
 const getAllOrders = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {

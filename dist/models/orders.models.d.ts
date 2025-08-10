@@ -8,24 +8,24 @@ declare const _default: mongoose.Model<{
     keyNumber: string;
     cart: mongoose.Types.DocumentArray<{
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }, mongoose.Types.Subdocument<mongoose.mongo.BSON.ObjectId, any, {
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }> & {
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }>;
     payment: mongoose.Types.DocumentArray<{
@@ -69,24 +69,24 @@ declare const _default: mongoose.Model<{
     keyNumber: string;
     cart: mongoose.Types.DocumentArray<{
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }, mongoose.Types.Subdocument<mongoose.mongo.BSON.ObjectId, any, {
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }> & {
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }>;
     payment: mongoose.Types.DocumentArray<{
@@ -132,24 +132,24 @@ declare const _default: mongoose.Model<{
     keyNumber: string;
     cart: mongoose.Types.DocumentArray<{
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }, mongoose.Types.Subdocument<mongoose.mongo.BSON.ObjectId, any, {
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }> & {
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }>;
     payment: mongoose.Types.DocumentArray<{
@@ -199,24 +199,24 @@ declare const _default: mongoose.Model<{
     keyNumber: string;
     cart: mongoose.Types.DocumentArray<{
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }, mongoose.Types.Subdocument<mongoose.mongo.BSON.ObjectId, any, {
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }> & {
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }>;
     payment: mongoose.Types.DocumentArray<{
@@ -260,24 +260,24 @@ declare const _default: mongoose.Model<{
     keyNumber: string;
     cart: mongoose.Types.DocumentArray<{
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }, mongoose.Types.Subdocument<mongoose.mongo.BSON.ObjectId, any, {
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }> & {
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }>;
     payment: mongoose.Types.DocumentArray<{
@@ -323,24 +323,24 @@ declare const _default: mongoose.Model<{
     keyNumber: string;
     cart: mongoose.Types.DocumentArray<{
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }, mongoose.Types.Subdocument<mongoose.mongo.BSON.ObjectId, any, {
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }> & {
         name: string;
+        photo: string;
         price: number;
         sku: string;
         quantity: number;
-        photo: string;
         subTotal: number;
     }>;
     payment: mongoose.Types.DocumentArray<{

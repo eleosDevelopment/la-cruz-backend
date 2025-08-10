@@ -15,6 +15,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const cors_1 = __importDefault(require("cors"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const express_1 = __importDefault(require("express"));
+const products_routes_js_1 = __importDefault(require("./routes/products.routes.js"));
+const orders_routes_js_1 = __importDefault(require("./routes/orders.routes.js"));
 const mongoose_1 = __importDefault(require("mongoose"));
 /*** VARIABLES ***/
 dotenv_1.default.config();
@@ -45,7 +47,9 @@ app.listen(process.env.PORT, () => __awaiter(void 0, void 0, void 0, function* (
 /****** MIDDLEWARES ******/
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
-;
+/****** ROUTES ******/
+app.use("/api/products", products_routes_js_1.default);
+app.use("/api/routes", orders_routes_js_1.default);
 app.use((err, req, res, next) => {
     const errorStatus = err.status || 500;
     const errorMsg = err.message || "Something went wrong!";

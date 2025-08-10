@@ -4,20 +4,20 @@ declare const _default: mongoose.Model<{
     updatedAt: NativeDate;
 } & {
     name: string;
-    price: number;
-    sku: string;
     photo: string;
     category: string;
+    price: number;
+    sku: string;
     qty: number;
 }, {}, {}, {}, mongoose.Document<unknown, {}, {
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
     name: string;
-    price: number;
-    sku: string;
     photo: string;
     category: string;
+    price: number;
+    sku: string;
     qty: number;
 }, {}, {
     timestamps: true;
@@ -26,10 +26,10 @@ declare const _default: mongoose.Model<{
     updatedAt: NativeDate;
 } & {
     name: string;
-    price: number;
-    sku: string;
     photo: string;
     category: string;
+    price: number;
+    sku: string;
     qty: number;
 } & {
     _id: mongoose.Types.ObjectId;
@@ -42,20 +42,20 @@ declare const _default: mongoose.Model<{
     updatedAt: NativeDate;
 } & {
     name: string;
-    price: number;
-    sku: string;
     photo: string;
     category: string;
+    price: number;
+    sku: string;
     qty: number;
 }, mongoose.Document<unknown, {}, mongoose.FlatRecord<{
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
     name: string;
-    price: number;
-    sku: string;
     photo: string;
     category: string;
+    price: number;
+    sku: string;
     qty: number;
 }>, {}, mongoose.ResolveSchemaOptions<{
     timestamps: true;
@@ -64,10 +64,10 @@ declare const _default: mongoose.Model<{
     updatedAt: NativeDate;
 } & {
     name: string;
-    price: number;
-    sku: string;
     photo: string;
     category: string;
+    price: number;
+    sku: string;
     qty: number;
 }> & {
     _id: mongoose.Types.ObjectId;

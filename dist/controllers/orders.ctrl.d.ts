@@ -30,13 +30,13 @@ export interface OrderRequestBody {
     customer: CustomerProps[];
 }
 export declare const createOrder: (req: Request<object, object, OrderRequestBody, ParsedQs>, res: Response, next: NextFunction) => Promise<Response | void>;
-export declare const updateProduct: (req: Request<{
+export declare const updateOrder: (req: Request<{
     id: string;
 }, object, OrderRequestBody, ParsedQs>, res: Response, next: NextFunction) => Promise<Response<typeof Orders> | undefined>;
-export declare const deleteProduct: (req: Request<{
+export declare const deleteOrder: (req: Request<{
     id: string;
 }, object, OrderRequestBody, ParsedQs>, res: Response, next: NextFunction) => Promise<Response<typeof Orders> | undefined>;
-export declare const getProduct: (req: Request<{
+export declare const getOrder: (req: Request<{
     id: string;
 }, object, OrderRequestBody, ParsedQs>, res: Response, next: NextFunction) => Promise<Response<typeof Orders> | undefined>;
 export declare const getAllOrders: (req: Request<object, object, OrderRequestBody, ParsedQs>, res: Response, next: NextFunction) => Promise<Response<typeof Orders> | undefined>;

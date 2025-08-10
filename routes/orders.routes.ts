@@ -1,4 +1,10 @@
-import { createOrder, deleteOrder, getAllOrders, getOrder, updateOrder } from "controllers/orders.ctrl";
+import {
+  createOrder,
+  deleteOrder,
+  getAllOrders,
+  getOrder,
+  updateOrder,
+} from "../controllers/orders.ctrl.js";
 import express from "express";
 
 const router = express.Router();
