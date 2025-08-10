@@ -1,6 +1,7 @@
 import { ParsedQs } from "qs";
 import Orders from "../models/orders.models.js";
 import { Request, Response, NextFunction } from "express";
+import router from "routes/products.routes.js";
 
 interface CartProps {
   name: string;
@@ -59,7 +60,7 @@ export const createOrder = async (
 };
 
 //EDIT
-export const updateProduct = async (
+export const updateOrder = async (
 	req: Request<{ id: string }, object, OrderRequestBody, ParsedQs>,
 	res: Response,
 	next: NextFunction,
@@ -83,7 +84,7 @@ export const updateProduct = async (
 };
 
 //DELETE
-export const deleteProduct = async (
+export const deleteOrder = async (
 	req: Request<{ id: string }, object, OrderRequestBody, ParsedQs>,
 	res: Response,
 	next: NextFunction,
@@ -98,7 +99,7 @@ export const deleteProduct = async (
 };
 
 //GET
-export const getProduct = async (
+export const getOrder = async (
 	req: Request<{ id: string }, object, OrderRequestBody, ParsedQs>,
 	res: Response,
 	next: NextFunction,
@@ -128,4 +129,3 @@ export const getAllOrders = async (
 		next(error);
 	}
 };
-

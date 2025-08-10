@@ -1,16 +1,23 @@
 import cors from "cors";
 import dotenv from "dotenv";
-import express, { type Express, NextFunction, Request, Response } from "express";
+import express, {
+  type Express,
+  NextFunction,
+  Request,
+  Response,
+} from "express";
+import productsRoutes from "./routes/products.routes.js";
+import ordersRoutes from "./routes/orders.routes.js";
 import mongoose from "mongoose";
 
 /*** VARIABLES ***/
-dotenv.config()
+dotenv.config();
 const app: Express = express();
 
 /*** EXPRESS SERVER AND DB CONNECTION ***/
 app.listen(process.env.PORT, async () => {
-	mongoose.set("strictQuery", false);
-	const uri = process.env.MONGODB_URI;
+  mongoose.set("strictQuery", false);
+  const uri = process.env.MONGODB_URI;
   if (!uri) {
     throw new Error("MONGODB_URI is not defined in the environment variables.");
   }
@@ -36,12 +43,13 @@ app.use(express.json());
 app.use(cors());
 
 /****** ROUTES ******/
-
+app.use("/api/products", productsRoutes);
+app.use("/api/routes", ordersRoutes);
 
 /****** ERROR HANDLING MIDDLEWARE ******/
 interface CustomError extends Error {
   status?: number;
-};
+}
 
 app.use(
   (err: CustomError, req: Request, res: Response, next: NextFunction): void => {
